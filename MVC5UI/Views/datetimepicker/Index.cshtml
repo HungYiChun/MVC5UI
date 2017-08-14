@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Bootstrap 3 Datepicker v4";
+}
+
+<h2>Bootstrap 3 Datepicker v4</h2>
+
+<hr />
+
+<div class="container">
+    <h3>example :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker1').datetimepicker();
+                });
+    </script>
+}
