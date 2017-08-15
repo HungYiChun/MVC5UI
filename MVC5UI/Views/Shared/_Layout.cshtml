@@ -21,17 +21,30 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a href="#menu-toggle" id="menu-toggle2">Sidebar &raquo;</a></li>
                     <li>@Html.ActionLink("HomePage", "Index", "Home")</li>
                     <li>@Html.ActionLink("Account", "Index", "Account")</li>
                     <li>@Html.ActionLink("Datetimepicker", "Index", "datetimepicker")</li>
                     <li>@Html.ActionLink("DataAnnotations", "Index", "DataAnnotations")</li>
+                    <li>
+                        <a data-toggle="dropdown" href="#">
+                            Encryption
+                            <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Encryption/HashMD5">HashMD5</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Encryption/HashSHA1">HashSHA1</a></li>
+                            <li><a href="/Encryption/HashSHA256">HashSHA256</a></li>                           
+                            <li><a href="/Encryption/HashSHA384">HashSHA384</a></li>
+                            <li><a href="/Encryption/HashSHA512">HashSHA512</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
-        <br />
-        <br />
         @RenderBody()
         <hr />
         <footer>

@@ -168,6 +168,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DataAnnotationsController.cs" />
     <Compile Include="Controllers\datetimepickerController.cs" />
+    <Compile Include="Controllers\EncryptionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -198,11 +199,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\images\puppye.jpg" />
     <Content Include="Content\rb-switcher\rb-switcher.css" />
     <Content Include="Content\Sidebar\Sidebar.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -294,6 +298,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -333,6 +342,11 @@
     <Content Include="Views\Account\Details.cshtml" />
     <Content Include="Views\Account\Edit.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Encryption\HashMD5.cshtml" />
+    <Content Include="Views\Encryption\HashSHA1.cshtml" />
+    <Content Include="Views\Encryption\HashSHA512.cshtml" />
+    <Content Include="Views\Encryption\HashSHA256.cshtml" />
+    <Content Include="Views\Encryption\HashSHA384.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

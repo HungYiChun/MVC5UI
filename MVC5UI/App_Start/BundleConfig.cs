@@ -27,8 +27,11 @@ namespace MVC5UI
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/bootstrap-datetimepicker.css"));//,
-                      //"~/Content/site.css"));
+                      "~/Content/bootstrap-datetimepicker.css",
+                      "~/Content/site.css",
+                      "~/Content/Sidebar/Sidebar.css",
+                      "~/Content/rb-switcher/rb-switcher.css",
+                      "~/Content/font-awesome.css"));
         }
     }
 }
