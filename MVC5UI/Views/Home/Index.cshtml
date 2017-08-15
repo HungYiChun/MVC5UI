@@ -2,30 +2,213 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    @*<h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+<link href="~/Content/rb-switcher/rb-switcher.css" rel="stylesheet" />
+<link href="~/Content/Sidebar/Sidebar.css" rel="stylesheet" />
+
+<!-- Sidebar -->
+<div id="wrapper" class="toggled">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li><br /></li>
+            <li class="sidebar-brand glyphicon glyphicon-home"> 首頁</li>
+            <li> 項目</li>
+        </ul>
+    </div>
 </div>
 
-<div class="row">
-    @*<div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="jumbotron">
+    <h1>Bootstrap CSS</h1>
+    <div class="row">
+        <h4>按鈕</h4>
+        <div class="col-sm-6">
+            <p class="lead"><button class="btn btn-default btn-lg">Button</button></p>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead"><button class="btn btn-primary btn-lg">Button2</button></p>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead"><button class="btn btn-warning btn-lg">Button3</button></p>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead"><button class="btn btn-danger btn-lg" disabled="disabled">Button4</button></p>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <br />
+
+    <div class="row">
+        <h4>圖片</h4>
+        <div class="col-sm-6">
+            <img src="~/Content/images/puppye.jpg" style="width:200px;height:150px;" alt="..." class="img-rounded">
+        </div>
+        <div class="col-sm-6">
+            <img src="~/Content/images/puppye.jpg" style="width:200px;height:150px;" alt="..." class="img-circle">
+        </div>
+        <div class="col-sm-6">
+            <img src="~/Content/images/puppye.jpg" style="width:200px;height:150px;" alt="..." class="img-thumbnail">
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>*@
+
+    <br />
+
+    <div class="row">
+        <h4>文字輸入</h4>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" placeholder="Text input">
+        </div>
+        <div class="col-sm-6">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <h4>下拉選單</h4>
+        <div class="col-sm-6">
+            <select class="form-control">
+                <option>項目1</option>
+                <option>項目2</option>
+                <option>項目3</option>
+                <option>項目4</option>
+                <option>項目5</option>
+            </select>
+        </div>
+        <div class="col-sm-6">
+            <select multiple class="form-control">
+                <option>項目1</option>
+                <option>項目2</option>
+                <option>項目3</option>
+                <option>項目4</option>
+                <option>項目5</option>
+            </select>
+        </div>
+    </div>
 </div>
+
+<div class="jumbotron">
+    <h1>rb-switcher</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <fieldset>
+                <legend>Checkbox 多選</legend>
+                <div>
+                    <label class="rb-switcher">
+                        <input type="checkbox" name="animal" id="dog" value="dog" />
+                        <i></i>
+                    </label>
+                    <label for="dog">
+                        Dog
+                    </label>
+                </div>
+                <div>
+                    <label class="rb-switcher">
+                        <input type="checkbox" name="animal" id="cat" value="cat" />
+                        <i></i>
+                    </label>
+                    <label for="cat">
+                        Cat
+                    </label>
+                </div>
+                <div>
+                    <label class="rb-switcher">
+                        <input type="checkbox" name="animal" id="bird" value="bird" />
+                        <i></i>
+                    </label>
+                    <label for="bird">
+                        Bird
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="col-sm-6">
+            <fieldset>
+                <legend>Radio 單選</legend>
+                <legend>Male</legend>
+                <label class="rb-switcher">
+                    <input type="radio" name="sex" value="male" checked>
+                    <i></i>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Female</legend>
+                <label class="rb-switcher red">
+                    <input type="radio" name="sex" value="female">
+                    <i></i>
+                </label>
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <h1>Siderbar</h1>
+    <p class="lead"><a href="#menu-toggle" id="menu-toggle2" style="font-size: x-large" class="btn btn-primary btn-lg">Sidebar &raquo;</a></p>
+</div>
+
+@*<div class="jumbotron">
+    <h1>FontAwesome</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <i class="fa fa-camera-retro fa-lg"></i> fa-lg
+            <i class="fa fa-camera-retro fa-2x"></i> fa-2x
+            <i class="fa fa-camera-retro fa-3x"></i> fa-3x
+            <i class="fa fa-camera-retro fa-4x"></i> fa-4x
+            <i class="fa fa-camera-retro fa-5x"></i> fa-5x
+        </div>
+        <div class="col-sm-6">
+            <div class="list-group">
+                <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+                <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+                <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+                <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+
+            <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+
+            <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="col-sm-6">
+            <div class="btn-group open">
+                <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
+                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+                    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+                    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+@section scripts{
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        });
+
+        $("#menu-toggle2").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+}

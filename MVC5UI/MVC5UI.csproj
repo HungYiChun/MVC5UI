@@ -166,6 +166,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DataAnnotationsController.cs" />
     <Compile Include="Controllers\datetimepickerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -175,14 +176,15 @@
     <Compile Include="Migrations\201708140742189_InitMVC5UI_DB.Designer.cs">
       <DependentUpon>201708140742189_InitMVC5UI_DB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708150735266_UpdateAccount.cs" />
+    <Compile Include="Migrations\201708150735266_UpdateAccount.Designer.cs">
+      <DependentUpon>201708150735266_UpdateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Account_Log.cs" />
     <Compile Include="Models\InitDatabase.cs" />
     <Compile Include="Models\MVC5UI_Model.cs" />
-    <Compile Include="Models\Partials\Account.cs" />
-    <Compile Include="Models\Partials\Role.cs" />
-    <Compile Include="Models\Partials\Status.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Role_Log.cs" />
     <Compile Include="Models\Status.cs" />
@@ -197,6 +199,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\puppye.jpg" />
+    <Content Include="Content\rb-switcher\rb-switcher.css" />
+    <Content Include="Content\Sidebar\Sidebar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -321,12 +326,13 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\datetimepicker\Index.cshtml" />
+    <Content Include="Views\DataAnnotations\Index.cshtml" />
     <Content Include="Views\Account\Create.cshtml" />
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Account\Details.cshtml" />
     <Content Include="Views\Account\Edit.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
-    <Content Include="Views\datetimepicker\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -340,6 +346,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708140742189_InitMVC5UI_DB.resx">
       <DependentUpon>201708140742189_InitMVC5UI_DB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708150735266_UpdateAccount.resx">
+      <DependentUpon>201708150735266_UpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

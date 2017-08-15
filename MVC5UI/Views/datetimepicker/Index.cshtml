@@ -21,12 +21,125 @@
             </div>
         </div>
     </div>
+
+    <h3>HH:mm :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>No Icon :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <input type='text' class="form-control" id='datetimepicker3' />
+        </div>
+    </div>
+
+    <h3>Format time :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker4'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Default time :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker5'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Year->Month->Day :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker6'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Disabled Days of the Week :</h3>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker7'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section scripts{
     <script type="text/javascript">
-                $(function () {
-                    $('#datetimepicker1').datetimepicker();
-                });
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+
+        $(function () {
+            $('#datetimepicker2').datetimepicker({
+                format: 'LT'
+            });
+        });
+
+        $(function () {
+            $('#datetimepicker3').datetimepicker();
+        });
+
+        $(function () {
+            $('#datetimepicker4').datetimepicker({
+                format: 'YYYY/MM/DD HH:mm'
+            });
+        });
+
+        $(function () {
+            $('#datetimepicker5').datetimepicker({
+                defaultDate: "1991/06/12",
+                format: 'YYYY/MM/DD HH:mm'
+            });
+        });
+
+        $(function () {
+            $('#datetimepicker6').datetimepicker({
+                viewMode: 'years',
+                format: 'YYYY/MM/DD'
+            });
+        });
+
+        $(function () {
+            $('#datetimepicker7').datetimepicker({
+                daysOfWeekDisabled: [0, 6]
+            });
+        });
     </script>
 }
